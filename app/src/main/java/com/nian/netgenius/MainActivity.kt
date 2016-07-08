@@ -8,20 +8,21 @@ import android.net.VpnService
 import android.os.Bundle
 import android.support.v4.content.LocalBroadcastManager
 import android.util.Log
+import android.view.View
 import kotlinx.android.synthetic.main.form.*
 
-fun vpnStatusToToggleLevel(status: Int): Int = when(status) {
+fun vpnStatusToToggleLevel(status: Int): Int = when (status) {
     VPN_STATUS_STOPPED -> 0
     VPN_STATUS_RUNNING -> 2
     else -> 1
 }
 
-fun vpnStatusShouldStop(status: Int): Boolean = when(status) {
+fun vpnStatusShouldStop(status: Int): Boolean = when (status) {
     VPN_STATUS_STOPPED -> false
     else -> true
 }
 
-class MainActivity : Activity() {
+class MainActivity : Activity(), View.OnClickListener {
     companion object {
         private val TAG = "MainActivity"
     }
@@ -34,6 +35,7 @@ class MainActivity : Activity() {
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.form)
+        findViewById(R.id.settings).setOnClickListener(this)
 
         // Should we make sure the vpn service is started already based o the preferences?
 
@@ -69,8 +71,8 @@ class MainActivity : Activity() {
             val intent = Intent(this, AdVpnService::class.java)
             intent.putExtra("COMMAND", Command.START.ordinal)
             intent.putExtra("NOTIFICATION_INTENT",
-                PendingIntent.getActivity(this, 0,
-                        Intent(this, MainActivity::class.java), 0))
+                    PendingIntent.getActivity(this, 0,
+                            Intent(this, MainActivity::class.java), 0))
             startService(intent)
         }
     }
@@ -86,5 +88,12 @@ class MainActivity : Activity() {
         updateStatus(AdVpnService.vpnStatus)
         LocalBroadcastManager.getInstance(this)
                 .registerReceiver(vpnServiceBroadcastReceiver, IntentFilter(VPN_UPDATE_STATUS_INTENT))
+    }
+
+    override fun onClick(v: View) {
+        if (v === findViewById(R.id.settings)){
+            intent = Intent(this, Settings::class.java)
+            startActivity(intent);
+        }
     }
 }

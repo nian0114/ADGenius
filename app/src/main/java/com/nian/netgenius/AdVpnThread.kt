@@ -21,20 +21,18 @@ import java.io.InputStreamReader
 import java.net.DatagramPacket
 import java.net.DatagramSocket
 import java.net.Inet4Address
-import java.net.InetAddress
 import java.util.concurrent.RejectedExecutionException
 import java.util.concurrent.SynchronousQueue
 import java.util.concurrent.ThreadPoolExecutor
 import java.util.concurrent.TimeUnit
 
-class AdVpnThread(vpnService: VpnService, notify: ((Int) -> Unit)?): Runnable {
+class AdVpnThread(vpnService: VpnService, notify: ((Int) -> Unit)?) : Runnable {
     companion object {
         const val TAG = "AdVpnThread"
     }
 
     private var notify: ((Int) -> Unit)? = notify
     private var vpnService = vpnService
-    private var dnsServer: InetAddress? = null
     private var vpnFileDescriptor: ParcelFileDescriptor? = null
     private var thread: Thread? = null
     private var interruptible: InterruptibleFileInputStream? = null
@@ -195,7 +193,7 @@ class AdVpnThread(vpnService: VpnService, notify: ((Int) -> Unit)?): Runnable {
 
             if (!blockedHosts!!.contains(dnsQueryName)) {
                 Log.i(TAG, "DNS Name $dnsQueryName Allowed!")
-                val outPacket = DatagramPacket(dnsRawData, 0, dnsRawData.size, dnsServer!!, 53)
+                val outPacket = DatagramPacket(dnsRawData, 0, dnsRawData.size, Settings.dnsServer!!, 53)
 
                 try {
                     dnsSocket.send(outPacket)
@@ -265,14 +263,19 @@ class AdVpnThread(vpnService: VpnService, notify: ((Int) -> Unit)?): Runnable {
     }
 
     private fun getDnsServers() {
-        val cm = vpnService.getSystemService(VpnService.CONNECTIVITY_SERVICE) as ConnectivityManager
-        // Seriously, Android? Seriously?
-        val activeInfo = cm.activeNetworkInfo ?: throw VpnNetworkException("No DNS Server")
-        val servers = cm.allNetworks.filter { val ni = cm.getNetworkInfo(it);
-            ni != null && ni.isConnected && ni.type == activeInfo.type && ni.subtype == activeInfo.subtype
-        }.elementAtOrNull(0)?.let { cm.getLinkProperties(it).dnsServers }
-        dnsServer = servers?.first() ?: throw VpnNetworkException("No DNS Server")
-        Log.i(TAG, "Got DNS server = $dnsServer")
+        if (Settings.dnsServer == null) {
+            val cm = vpnService.getSystemService(VpnService.CONNECTIVITY_SERVICE) as ConnectivityManager
+            // Seriously, Android? Seriously?
+            val activeInfo = cm.activeNetworkInfo ?: throw VpnNetworkException("No DNS Server")
+            val servers = cm.allNetworks.filter {
+                val ni = cm.getNetworkInfo(it);
+                ni != null && ni.isConnected && ni.type == activeInfo.type && ni.subtype == activeInfo.subtype
+            }.elementAtOrNull(0)?.let { cm.getLinkProperties(it).dnsServers }
+            Settings.dnsServer = servers?.first() ?: throw VpnNetworkException("No DNS Server")
+            Log.i(TAG, "Got DNS server = ${Settings.dnsServer}")
+        } else {
+            Log.i(TAG, "Got DNS server = ${Settings.dnsServer}")
+        }
     }
 
     private fun loadBlockedHosts() {
@@ -283,7 +286,7 @@ class AdVpnThread(vpnService: VpnService, notify: ((Int) -> Unit)?): Runnable {
         }
 
         Log.i(TAG, "Loading block list")
-        val _blockedHosts : MutableSet<String> = mutableSetOf()
+        val _blockedHosts: MutableSet<String> = mutableSetOf()
 
         for (fileName in listOf("adaway_hosts.txt", "ad_servers.txt")) {
             val reader = vpnService.assets.open(fileName)

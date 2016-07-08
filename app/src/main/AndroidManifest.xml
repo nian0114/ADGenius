@@ -20,6 +20,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".Settings"></activity>
+
         <service
             android:name=".AdVpnService"
             android:permission="android.permission.BIND_VPN_SERVICE">
