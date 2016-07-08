@@ -6,6 +6,7 @@
     <string name="disconnected">连接已经断开！</string>
     <string name="dns_item">远程DNS</string>
     <string name="dns_value">DNS地址</string>
+    <string name="dns_value_summary">请在此处输入DNS地址</string>
     <string name="notification_reconnecting">正在重新连接...</string>
     <string name="notification_reconnecting_error">正在重新连接...</string>
     <string name="notification_running">广告已经离你远去！</string>
