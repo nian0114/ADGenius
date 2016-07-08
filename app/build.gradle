@@ -73,4 +73,5 @@ dependencies {
     compile 'org.pcap4j:pcap4j-packetfactory-propertiesbased:1.6.4'
     compile 'org.slf4j:slf4j-android:1.7.21'
     compile 'dnsjava:dnsjava:2.1.7'
+    testCompile 'junit:junit:4.12'
 }
