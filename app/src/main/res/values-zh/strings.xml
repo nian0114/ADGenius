@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">广告狗</string>
+    <string name="connected">已经连接上咯！</string>
+    <string name="connecting">正在连接中！</string>
+    <string name="disconnected">连接已经断开！</string>
+    <string name="dns_item">远程DNS</string>
+    <string name="dns_value">DNS地址</string>
+    <string name="notification_reconnecting">正在重新连接...</string>
+    <string name="notification_reconnecting_error">正在重新连接...</string>
+    <string name="notification_running">广告已经离你远去！</string>
+    <string name="notification_starting">正在启动广告狗</string>
+    <string name="notification_stopped">尚未启动</string>
+    <string name="notification_stopping">广告狗已经停止工作</string>
+    <string name="notification_title">Bye！</string>
+    <string name="status_label">状态：</string>
+    <string name="preferences_file_key">通用设置</string>
+    <string name="notification_waiting_for_net">正在等待网络连接</string>
+    <string name="toast_reconnecting_error">意外发生了，2s内重新连接</string>
+    <string name="vpn_enabled_key">VPN服务已启动</string>
+    <string name="vpn_toggle_description">VPN开关</string>
+</resources>
