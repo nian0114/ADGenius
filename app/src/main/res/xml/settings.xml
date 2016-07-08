@@ -2,8 +2,10 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="DNS设置">
         <CheckBoxPreference
+            android:defaultValue="false"
             android:key="dns_custom"
             android:title="@string/dns_item" />
+
         <EditTextPreference
             android:dependency="dns_custom"
             android:key="dns_value"
