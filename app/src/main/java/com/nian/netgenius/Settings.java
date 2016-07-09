@@ -41,6 +41,8 @@ public class Settings extends PreferenceActivity {
                     dnsServer=InetAddress.getByName(dnsIP);
                 } catch (UnknownHostException e) {
                     e.printStackTrace();
+                } catch (Exception e){
+                    e.printStackTrace();
                 }
 
                 mDNSIP.setSummary(dnsIP);
