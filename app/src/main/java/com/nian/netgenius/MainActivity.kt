@@ -10,6 +10,8 @@ import android.support.v4.content.LocalBroadcastManager
 import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.form.*
+import java.io.File
+import java.io.IOException
 
 fun vpnStatusToToggleLevel(status: Int): Int = when (status) {
     VPN_STATUS_STOPPED -> 0
@@ -36,6 +38,17 @@ class MainActivity : Activity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.form)
         findViewById(R.id.settings).setOnClickListener(this)
+
+        val path = filesDir.parent
+        val file = File(path + "/files/user_custom.txt")
+        if (!file.exists()) {
+            try {
+                file.createNewFile()
+            } catch (e: IOException) {
+                e.printStackTrace()
+            }
+
+        }
 
         // Should we make sure the vpn service is started already based o the preferences?
 
