@@ -14,9 +14,9 @@ fun broadcastReceiver(init: (Context, Intent) -> Unit): BroadcastReceiver {
     }
 }
 
-fun toHexString(ba: ByteArray) : String {
+fun toHexString(ba: ByteArray): String {
     val str = StringBuilder()
-    for(c in ba) {
+    for (c in ba) {
         str.append(String.format("%x", c))
     }
     return str.toString()
@@ -28,7 +28,7 @@ private fun logPacket(TAG: String, packet: ByteArray, size: Int) = logPacket(TAG
 
 private fun logPacket(TAG: String, packet: ByteArray, offset: Int, size: Int) {
     var logLine = "PACKET: <"
-    for (index in (offset..(size-1))) {
+    for (index in (offset..(size - 1))) {
         logLine += String.format("%02x", packet[index])
     }
 

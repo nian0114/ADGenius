@@ -18,7 +18,8 @@ public class Settings extends PreferenceActivity {
     private CheckBoxPreference mDnsCustom;
     public static InetAddress dnsServer;
     private EditTextPreference mDNSIP;
-    private String summary ;
+    private String summary;
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.settings);
@@ -26,9 +27,9 @@ public class Settings extends PreferenceActivity {
         mDnsCustom = (CheckBoxPreference) findPreference("dns_custom");
         mDNSIP = (EditTextPreference) findPreference("dns_value");
 
-        try{
+        try {
             summary = dnsServer.getHostAddress();
-        } catch (NullPointerException e){
+        } catch (NullPointerException e) {
             summary = getString(R.string.dns_value_summary);
         }
 
@@ -38,10 +39,10 @@ public class Settings extends PreferenceActivity {
             public boolean onPreferenceChange(Preference preference, Object newValue) {
                 String dnsIP = (String) newValue;
                 try {
-                    dnsServer=InetAddress.getByName(dnsIP);
+                    dnsServer = InetAddress.getByName(dnsIP);
                 } catch (UnknownHostException e) {
                     e.printStackTrace();
-                } catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
 
@@ -54,7 +55,7 @@ public class Settings extends PreferenceActivity {
     public boolean onPreferenceTreeClick(PreferenceScreen preferencescreen, Preference preference) {
         if (preference == mDnsCustom) {
             if (!mDnsCustom.isChecked()) {
-                dnsServer=null;
+                dnsServer = null;
             }
         }
         return false;
