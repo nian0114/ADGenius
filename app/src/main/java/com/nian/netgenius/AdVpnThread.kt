@@ -292,7 +292,7 @@ class AdVpnThread(vpnService: VpnService, notify: ((Int) -> Unit)?) : Runnable {
                 "adblockb", "adblockc", "adblockd",
                 "adblocke", "adblockf", "adblockg",
                 "adblockh", "adblocki", "adblockj",
-                "adblockk", "adblockl", "adblockm")) {
+                "adblockk", "adblockl")) {
             val reader = vpnService.assets.open(fileName)
             var count = 0
             try {

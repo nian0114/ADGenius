@@ -1,3 +1,4 @@
+127.0.0.1 
 127.0.0.1 0.r.msn.com
 127.0.0.1 0.up.qingdaonews.com
 127.0.0.1 005.free-counter.co.uk
@@ -441,7 +442,6 @@
 127.0.0.1 161.6.87.194.dynamic.dol.ru
 127.0.0.1 162.6.87.194.dynamic.dol.ru
 127.0.0.1 163.6.87.194.dynamic.dol.ru
-127.0.0.1 163.wrating.com
 127.0.0.1 163.wrating.com
 127.0.0.1 164.6.87.194.dynamic.dol.ru
 127.0.0.1 165.6.87.194.dynamic.dol.ru
@@ -1714,11 +1714,9 @@
 127.0.0.1 a.ad7.com
 127.0.0.1 a.admaxserver.com
 127.0.0.1 a.admob.com
-127.0.0.1 a.admob.com
 127.0.0.1 a.adnium.com
 127.0.0.1 a.adorika.net
 127.0.0.1 a.adready.com
-127.0.0.1 a.adroll.com
 127.0.0.1 a.adroll.com
 127.0.0.1 a.ads.cn.miaozhen.com
 127.0.0.1 a.ads.t-online.de
@@ -1733,7 +1731,6 @@
 127.0.0.1 a.affil.io
 127.0.0.1 a.ai.inmobi.com
 127.0.0.1 a.alimama.cn
-127.0.0.1 a.alimama.cn
 127.0.0.1 a.amd.com
 127.0.0.1 a.americanidol.com
 127.0.0.1 a.amxdt.com
@@ -1742,7 +1739,6 @@
 127.0.0.1 a.answers.com
 127.0.0.1 a.api.ad-locus.com
 127.0.0.1 a.appjiagu.com
-127.0.0.1 a.applovin.com
 127.0.0.1 a.applovin.com
 127.0.0.1 a.autoexpress.co.uk
 127.0.0.1 a.baidu.com
@@ -1760,7 +1756,6 @@
 127.0.0.1 a.clickyab.com
 127.0.0.1 a.clookie.net
 127.0.0.1 a.cn.duoyi.com
-127.0.0.1 a.collective-media.net
 127.0.0.1 a.collective-media.net
 127.0.0.1 a.collective-media.net.22995.9150.302br.net
 127.0.0.1 a.collective-media.net.23421.9163.302br.net
@@ -1955,7 +1950,6 @@
 127.0.0.1 a.game.qidian.com
 127.0.0.1 a.giantrealm.com
 127.0.0.1 a.glcdn.co
-127.0.0.1 a.glcdn.co
 127.0.0.1 a.global.msads.net
 127.0.0.1 a.goember.com
 127.0.0.1 a.gsmarena.com
@@ -1978,11 +1972,9 @@
 127.0.0.1 a.kat.cr
 127.0.0.1 a.kat.ph
 127.0.0.1 a.kickass.to
-127.0.0.1 a.kickass.to
 127.0.0.1 a.kickassunblock.net
 127.0.0.1 a.kik.bg
 127.0.0.1 a.klaviyo.com
-127.0.0.1 a.komoona.com
 127.0.0.1 a.komoona.com
 127.0.0.1 a.ktxtr.com
 127.0.0.1 a.law.com
@@ -2022,7 +2014,6 @@
 127.0.0.1 a.remarketstats.com
 127.0.0.1 a.rfihub.com
 127.0.0.1 a.rmgserving.com
-127.0.0.1 a.rvttrack.com
 127.0.0.1 a.rvttrack.com
 127.0.0.1 a.sc.freepornvs.com
 127.0.0.1 a.scorecardresearch.com
@@ -2071,9 +2062,7 @@
 127.0.0.1 a.venetian.com
 127.0.0.1 a.visadd.com
 127.0.0.1 a.visualrevenue.com
-127.0.0.1 a.visualrevenue.com
 127.0.0.1 a.vonage.com
-127.0.0.1 a.vserv.mobi
 127.0.0.1 a.vserv.mobi
 127.0.0.1 a.walla.co.il
 127.0.0.1 a.websponsors.com
@@ -2193,7 +2182,6 @@
 127.0.0.1 aa-download.waw.pl
 127.0.0.1 aa-gb.marketgid.com
 127.0.0.1 aa-gb.mgid.com
-127.0.0.1 aa-gb.mgid.com
 127.0.0.1 aa-nb.mgid.com
 127.0.0.1 aa-oo.top06.cn
 127.0.0.1 aa.adfarm1.adition.com
@@ -2224,18 +2212,12 @@
 127.0.0.1 aax-eu.amazon-adsystem.com
 127.0.0.1 aax-fe-pek.amazon-adsystem.com
 127.0.0.1 aax-fe-sin.amazon-adsystem.com
-127.0.0.1 aax-fe-sin.amazon-adsystem.com
-127.0.0.1 aax-fe.amazon-adsystem.com
 127.0.0.1 aax-fe.amazon-adsystem.com
 127.0.0.1 aax-us-east-rtb.amazon-adsystem.com
 127.0.0.1 aax-us-east.amazon-adsystem.com
-127.0.0.1 aax-us-east.amazon-adsystem.com
 127.0.0.1 aax-us-pdx.amazon-adsystem.com
 127.0.0.1 aax-us-west.amazon-adsystem.com
-127.0.0.1 aax-us-west.amazon-adsystem.com
 127.0.0.1 aax.amazon-adsystem.com
-127.0.0.1 aax.amazon-adsystem.com
-127.0.0.1 ab-gb.mgid.com
 127.0.0.1 ab-gb.mgid.com
 127.0.0.1 ab-nb.marketgid.com
 127.0.0.1 ab-nb.mgid.com
@@ -2294,14 +2276,12 @@
 127.0.0.1 abtracker.adultbouncer.com
 127.0.0.1 abz.com
 127.0.0.1 ac-gb.mgid.com
-127.0.0.1 ac-gb.mgid.com
 127.0.0.1 ac-nb.marketgid.com
 127.0.0.1 ac.babsrv.com
 127.0.0.1 ac.berlinonline.de
 127.0.0.1 ac.eu.enecto.com
 127.0.0.1 ac.express.de
 127.0.0.1 ac.laonanren.com
-127.0.0.1 ac.mmstat.com
 127.0.0.1 ac.mmstat.com
 127.0.0.1 ac.mz-web.de
 127.0.0.1 ac.openx.com
@@ -2404,7 +2384,6 @@
 127.0.0.1 ad-411.com
 127.0.0.1 ad-ace.doubleclick.net
 127.0.0.1 ad-agent.com
-127.0.0.1 ad-apac.doubleclick.net
 127.0.0.1 ad-apac.doubleclick.net
 127.0.0.1 ad-balancer.net
 127.0.0.1 ad-blaster.com
@@ -3109,7 +3088,6 @@
 127.0.0.1 ad-feeds.com
 127.0.0.1 ad-flow.com
 127.0.0.1 ad-g.doubleclick.net
-127.0.0.1 ad-g.doubleclick.net
 127.0.0.1 ad-gb.mgid.com
 127.0.0.1 ad-gbn.com
 127.0.0.1 ad-groups.com
@@ -3267,7 +3245,10 @@
 127.0.0.1 ad.amtk-media.com.52677.9302.302br.net
 127.0.0.1 ad.amtk-media.com.52678.9302.302br.net
 127.0.0.1 ad.antventure.com
+127.0.0.1 ad.api.3g.tudou.com
+127.0.0.1 ad.api.3g.youku.com
 127.0.0.1 ad.app-authority.com
+127.0.0.1 ad.app.autohome.com.cn
 127.0.0.1 ad.appier.net
 127.0.0.1 ad.apps.fm
 127.0.0.1 ad.aquamediadirect.com
@@ -3275,7 +3256,6 @@
 127.0.0.1 ad.arbomedia.pl
 127.0.0.1 ad.asntown.net
 127.0.0.1 ad.at.doubleclick.net
-127.0.0.1 ad.atdmt.com
 127.0.0.1 ad.atdmt.com
 127.0.0.1 ad.au.doubleclick.net
 127.0.0.1 ad.auditude.com
@@ -3371,7 +3351,6 @@
 127.0.0.1 ad.donanimhaber.com
 127.0.0.1 ad.dopool.com
 127.0.0.1 ad.doubleclick.de
-127.0.0.1 ad.doubleclick.net
 127.0.0.1 ad.doubleclick.net
 127.0.0.1 ad.doubleclick.net-60563.9436.302br.net
 127.0.0.1 ad.doubleclick.net.1.6100.302br.net
@@ -4998,3 +4977,24 @@
 127.0.0.1 ad.doubleclick.net.24781.9176.302br.net
 127.0.0.1 ad.doubleclick.net.24783.9176.302br.net
 127.0.0.1 ad.doubleclick.net.24786.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24787.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24789.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24792.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24795.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24796.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24798.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24801.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24804.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24805.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24807.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24808.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24810.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24811.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24813.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24814.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24816.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24817.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24819.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24820.9176.302br.net
+127.0.0.1 ad.doubleclick.net.24919.9185.302br.net
+127.0.0.1 ad.doubleclick.net.24931.9185.302br.net
