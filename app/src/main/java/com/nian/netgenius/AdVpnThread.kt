@@ -309,6 +309,27 @@ class AdVpnThread(vpnService: VpnService, notify: ((Int) -> Unit)?) : Runnable {
             Log.i(TAG, "From file $fileName loaded $count entires")
         }
 
+        for (fileName in listOf("user_custom.txt")) {
+            val reader = vpnService.openFileInput(fileName)
+            var count = 0
+            try {
+                InputStreamReader(reader.buffered()).forEachLine {
+                    val s = it.removeSurrounding(" ")
+                    if (s.length != 0 && s[0] != '#') {
+                        val split = s.split(" ", "\t")
+                        if (split.size == 2 && split[0] == "127.0.0.1") {
+                            count += 1
+                            _blockedHosts.add(split[1].toLowerCase())
+                        }
+                    }
+                }
+            } finally {
+                reader.close()
+            }
+
+            Log.i(TAG, "From file $fileName loaded $count entires")
+        }
+
         blockedHosts = _blockedHosts
         Log.i(TAG, "Loaded ${blockedHosts!!.size} blocked hosts")
     }

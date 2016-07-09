@@ -25,4 +25,6 @@
     <string name="dns_item">Remote DNS</string>
     <string name="dns_value">DNS Address</string>
     <string name="dns_value_summary">Enter DNS Address Here</string>
+    <string name="block_domain">Custom Block Domain</string>
+    <string name="domain">Domain</string>
 </resources>

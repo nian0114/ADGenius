@@ -12,4 +12,9 @@
             android:title="@string/dns_value" />
     </PreferenceCategory>
 
+    <PreferenceCategory android:title="@string/domain">
+        <EditTextPreference
+            android:key="block_domain"
+            android:title="@string/block_domain" />
+    </PreferenceCategory>
 </PreferenceScreen>
