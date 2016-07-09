@@ -288,7 +288,11 @@ class AdVpnThread(vpnService: VpnService, notify: ((Int) -> Unit)?) : Runnable {
         Log.i(TAG, "Loading block list")
         val _blockedHosts: MutableSet<String> = mutableSetOf()
 
-        for (fileName in listOf("adaway_hosts.txt", "ad_servers.txt")) {
+        for (fileName in listOf("adblocka",
+                "adblockb", "adblockc", "adblockd",
+                "adblocke", "adblockf", "adblockg",
+                "adblockh", "adblocki", "adblockj",
+                "adblockk", "adblockl", "adblockm")) {
             val reader = vpnService.assets.open(fileName)
             var count = 0
             try {
