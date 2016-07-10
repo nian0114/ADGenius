@@ -1817,8 +1817,6 @@
 127.0.0.1 ip.nuggad.net
 127.0.0.1 ip134.timesink.com
 127.0.0.1 ip2.casalemedia.com
-127.0.0.1 ip6-allnodes
-127.0.0.1 ip6-allrouters
 127.0.0.1 ipa01.int.vmsn.de
 127.0.0.1 ipa01.ixn.local.vmsn.de
 127.0.0.1 ipa02.bob.local.vmsn.de
@@ -4998,3 +4996,5 @@
 127.0.0.1 mobads.baidu.com
 127.0.0.1 mobaloo.go2cloud.org
 127.0.0.1 mobbridge.mobpartner.mobi
+127.0.0.1 mobcdn.com
+127.0.0.1 mobday.com
